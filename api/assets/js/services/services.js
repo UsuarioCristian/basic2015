@@ -20,7 +20,7 @@ value('version', '0.1')
 	return{
 		getAllCountries:function(){
 			
-			$http.get(ApiEndpointFactory.ApiEndpoint +'/basic/web/resource/search')
+			$http.get(ApiEndpointFactory.ApiEndpoint +'/basic2015/web/resource/search')
 			.then(function(response){
 				console.log(response);
 				console.log('Ejecutado')
@@ -42,7 +42,7 @@ value('version', '0.1')
 			}
 
 
-			$http.post(ApiEndpointFactory.ApiEndpoint +'/basic/web/resource/add', pais)
+			$http.post(ApiEndpointFactory.ApiEndpoint +'/basic2015/web/resource/add', pais)
 			.then(function(response){
 				console.log(response);
 				console.log('Ejecutado')
